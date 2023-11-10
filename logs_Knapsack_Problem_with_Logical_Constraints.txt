@@ -1,0 +1,57 @@
+
+Gurobi 10.0.3 (win64) logging started Fri Nov 10 16:24:18 2023
+
+Set parameter LogFile to value "logs_Knapsack_Problem_with_Logical_Constraints.txt"
+Gurobi Optimizer version 10.0.3 build v10.0.3rc0 (win64)
+
+CPU model: AMD Ryzen 5 3500U with Radeon Vega Mobile Gfx, instruction set [SSE2|AVX|AVX2]
+Thread count: 4 physical cores, 8 logical processors, using up to 8 threads
+
+Optimize a model with 9 rows, 500 columns and 1018 nonzeros
+Model fingerprint: 0x7b8f41cc
+Variable types: 0 continuous, 500 integer (500 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+02]
+  Objective range  [7e-02, 1e+02]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 2e+04]
+
+MIP start from previous solve did not produce a new incumbent solution
+MIP start from previous solve violates constraint constraint_1 by 1.000000000
+
+Found heuristic solution: objective 14879.400000
+Presolve removed 1 rows and 1 columns
+Presolve time: 0.00s
+Presolved: 8 rows, 499 columns, 1014 nonzeros
+Variable types: 0 continuous, 499 integer (499 binary)
+Found heuristic solution: objective 18117.050000
+
+Root relaxation: objective 2.056775e+04, 11 iterations, 0.00 seconds (0.00 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0 20567.7522    0    2 18117.0500 20567.7522  13.5%     -    0s
+H    0     0                    20473.910000 20567.7522  0.46%     -    0s
+H    0     0                    20557.630000 20567.7522  0.05%     -    0s
+H    0     0                    20564.840000 20567.7522  0.01%     -    0s
+H    0     0                    20565.350000 20567.7522  0.01%     -    0s
+     0     0 20567.4618    0    3 20565.3500 20567.4618  0.01%     -    0s
+     0     0 20567.4618    0    2 20565.3500 20567.4618  0.01%     -    0s
+     0     0 20567.4618    0    3 20565.3500 20567.4618  0.01%     -    0s
+     0     0 20567.4618    0    5 20565.3500 20567.4618  0.01%     -    0s
+     0     0 20567.4618    0    4 20565.3500 20567.4618  0.01%     -    0s
+     0     0 20567.4018    0    5 20565.3500 20567.4018  0.01%     -    0s
+
+Cutting planes:
+  Cover: 2
+  MIR: 1
+  StrongCG: 2
+
+Explored 1 nodes (31 simplex iterations) in 0.11 seconds (0.02 work units)
+Thread count was 8 (of 8 available processors)
+
+Solution count 6: 20565.4 20564.8 20557.6 ... 14879.4
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 2.056535000000e+04, best bound 2.056740000000e+04, gap 0.0100%
